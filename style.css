@@ -1,0 +1,293 @@
+body{
+    background: #F3F5FC;
+}
+
+.Logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}
+
+.encriptar{
+    position: absolute;
+    top: 168px;
+    left: 240px;
+}
+
+.texto{
+    position: absolute;
+    width: 751px;
+    height: 470px;
+    outline: none;
+    background: #F3F5FC;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0em;
+    border: none;
+    text-align: left;
+    color: #0A3871;
+}
+
+.texto::placeholder{
+    color: #0A3871;
+}
+
+.condicion{
+position: absolute;
+display: flex;
+width: 229px;
+height: 18px;
+top: 655px;
+left: 240px;
+gap: 8px;
+}
+
+.condicion p{
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.botones{
+    position: absolute;
+    display: flex;
+    width: 680px;
+    height: 67px;
+    top: 685px;
+    left: 240px;
+    gap: 24px;
+}
+
+.btnenc{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btnenc:hover{
+    width: 360px;
+    padding: 20px;
+}
+
+.btnenc:active{
+    background: #088c19;
+    font-weight: bold;
+}
+
+.btndes{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btndes:hover{
+    width: 360px;
+    padding: 20px;
+}
+
+.btndes:active{
+    background: #088c19;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.copiar{
+    position: absolute;
+    top: 680px;
+    left: 1135px;
+    display: none;
+}
+
+.btncopiar{
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    color: #0A3871;
+}
+
+.btncopiar:hover{
+    height: auto;
+}
+
+.btncopiar:active{
+    background: #0A3871;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.resultado{
+    position: absolute;
+    top: 40px;
+    left: 1100px;
+}
+
+.arearesultado{
+    position: absolute;
+    width: 400px;
+    height: 744px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    border-radius: 32px;
+}
+
+.arearesultado img{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 100px;
+    left: 30px;
+}
+
+.mensajeResultado{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    padding: 10px;
+    width: 400px;
+    top: 400px;
+}
+
+.mensaje{
+    position: absolute;
+    display:none;
+    width: 300px;
+    left: 25px;
+    top: 30px;
+    height: 500px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #495057;
+    text-align: left;
+}
+
+.mensajeResultado h1{
+    width: 250px;
+    font-weight: 700;
+    font-size: 29px;
+    color: #343A40;
+}
+
+.mensajeResultado p{
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #495057;
+}
+
+.piedePagina {
+    position: absolute;
+    top: 850px;
+    width: 100%;
+    height: 60px;
+    background: #0A3871;
+}
+
+.piedePagina p{
+    position: absolute;
+    left: 50%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    top: 40%;
+}
+
+/* Responsive Design*/
+
+@media screen and (max-width:820px) {
+
+    .Logo{
+        top: 50px;
+        left: 20px;
+        gap: 50px;
+    }
+
+    .encriptar{
+        top: 150px;
+        left: 17px;
+    }
+
+    .texto{
+        width: 380px;
+        height: 580px;
+    }
+
+    .texto::placeholder{
+        color: #0A3871;
+        font-size: 25px;
+    }
+
+    .condicion{
+        font-weight: bold;
+        width: 229px;
+        height: 18px;
+        top: 750px;
+        left: 20px;
+        gap: 8px;
+        color: red;
+    }
+
+    .botones{
+        width: 380px;
+        height: 67px;
+        top: 780px;
+        left: 17px;
+        gap: 14px;
+    }
+
+    .resultado{
+        top: 900px;
+        left: 17px;
+    }
+
+    .arearesultado{
+        width: 380px;
+        height: 600px;
+    }
+
+    .arearesultado img{
+        left: 19.5px;
+    }
+
+    .mensajeResultado{
+        left: -10px;
+        width: 380px;
+        top: 380px;
+    }
+
+    .copiar{
+        top: 1430px;
+        left: 100px;
+    }
+
+    .btncopiar{
+        width: 200px;
+        height: 67px;
+    }
+}

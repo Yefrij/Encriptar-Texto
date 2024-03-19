@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <img src="imag/logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+
+    <main>
+        <div class="encriptar">
+            <textarea 
+            class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+
+        <div class="condicion">
+            <img src="imag/condicion.png" alt="Logo de Condiciones" width="16px" height="16px">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="botones">
+            <button class="btnenc" type="button" onclick="encriptarTexto()">Encriptar</button>
+            <button class="btndes" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+        
+        <div class="resultado">
+            <div class="arearesultado">
+                <img src="imag/muneco.png" alt="logo imagen muñeco" id="muneco">
+                <div class="mensajeResultado" id="mensajeResultado">
+                    <h1 id="tituloResultado">Ningún mensaje fue encontrado</h1>
+                    <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="mensaje" id="mensaje">
+                    <textarea name="mensaje" cols="30" rows="10" class="resultadoFinal" id="mensajeFinal"></textarea>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="copiar" id="btncopiar">
+            <button class="btncopiar"  type="button">Copiar</button>
+        </div>
+ 
+    </main>
+
+    <footer class="piedePagina">
+        <div class="titulo">
+            <p> &copy Create by: Yefri J. Garcia</p>
+        </div>
+    </footer>
+
+    <script src="Code.js"></script>
+
+</body>
+
+</html>
